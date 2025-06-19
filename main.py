@@ -1,8 +1,8 @@
 
-import re
+import e
 import time
-import urllib
-from datetime import datetime, timedelta
+import urlib
+from datetim import datetime, timedelta
 
 from vkbottle.bot import Bot, Message, rules
 from vkbottle import Keyboard, Callback, KeyboardButtonColor, Text, GroupEventType, GroupTypes, User
@@ -12,7 +12,7 @@ import sqlite3
 with open("config.json", "r") as js:
     open_file = json.load(js)
 
-bot = Bot(token=open_file['bot-token'])
+bot = Bot(token=open_file['vkbot-tokenid'])
 
 async def get_logic(number = int):
     if number < 1: return False
